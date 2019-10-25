@@ -298,7 +298,8 @@
 <!-- Toolbar -->
 <div>
   
-  <app-test [uname]="username"></app-test>
+  <app-test (notify)="parentMethod($event)"></app-test>
+  {{msg}}
 </div>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
